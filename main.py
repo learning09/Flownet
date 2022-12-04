@@ -88,7 +88,7 @@ parser.add_argument('--milestones', default=[100,150,200], metavar='N', nargs='*
 
 
 best_EPE = -1
-n_iter = int(start_epoch)
+n_iter = int(args.start_epoch)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 
