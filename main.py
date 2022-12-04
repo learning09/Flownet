@@ -86,7 +86,7 @@ parser.add_argument('--div-flow', default=20,
 parser.add_argument('--milestones', default=[100,150,200], metavar='N', nargs='*', help='epochs at which learning rate is divided by 2')
 
 
-
+start_epoch = 5
 best_EPE = -1
 n_iter = int(start_epoch)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
